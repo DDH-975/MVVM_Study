@@ -147,7 +147,7 @@ public class MyViewModel extends ViewModel {
 }
 ```
 
-👉 외부(View)는 `count`만 관찰 가능.
+👉 외부(View)는 `count`만 관찰 가능.  <br>
 👉 데이터 변경은 오직 **ViewModel 내부 메서드**로만 허용.
 
 ---
