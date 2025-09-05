@@ -6,6 +6,14 @@
 * **View** : UI 표시 (Activity, Fragment, XML). 사용자 입력 처리.
 * **ViewModel** : View와 Model의 중간 다리. 상태 유지, 데이터 가공, UI에 필요한 형태로 제공.
 
+### MVVM 동작 순서
+1. 사용자의 입력(버튼 클릭, 텍스트 입력)등은 View를 통해 들어온다.
+2. View에 입력이 들어오면 Command 패턴을 이용해 ViewModel로 입력을 넘긴다.
+3. ViewModel은 Model에 데이터를 요청한다.
+4. Model은 데이터를 ViewModel에 요청 받은 데이터를 반환한다.
+5. ViewModel은 반환 받은 데이터를 가공하고 보관한다.
+6. View는 ViewModel과 DataBinding하여 UI를 업데이트 한다.
+
 ---
 
 ## 2. ViewModel
